@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %} View All Users {% endblock %}
+{% block content %}
+<table class="table">
+    <thead class="table-dark">
+    <tr>
+        <th scope="col"> ID </th>
+        <th scope="col"> Name </th>
+        <th scope="col"> Email </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in values %}
+    <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
