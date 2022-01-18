@@ -98,7 +98,8 @@ def user():
 def view_users():
     return render_template("view_users.html", values=users.query.all())
 
-@app.route("/")
+@a
+ pp.route("/")
 def home():
     return render_template('index.html')
 
