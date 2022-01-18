@@ -66,6 +66,8 @@ def logout():
 def user():
     # Get session or send to login screen
     email = None
+    address = None
+    phone = None
     if "user" in session:
         user_name = session["user"]
         if request.method == "POST":
